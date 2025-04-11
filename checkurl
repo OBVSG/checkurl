@@ -43,4 +43,4 @@ else:
 
 with httpx.Client() as c:
     for url in urls:
-        resp = c.get(url, follow_redirects=True)
+        resp = c.head(url, follow_redirects=True)
